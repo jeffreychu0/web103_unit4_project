@@ -83,7 +83,7 @@ export const updateCar = async (req, res) => {
            color = $3,
            roof = $4,
            wheels = $5,
-           interior = $6,
+           interior = $6
        WHERE id = $7
        RETURNING *`,
       [name, convertible, color, roof, wheels, interior, id]
