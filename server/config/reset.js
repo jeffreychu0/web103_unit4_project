@@ -11,8 +11,8 @@ const createCarsTable = async () => {
         convertible BOOLEAN NOT NULL,
         color TEXT NOT NULL,
         roof TEXT NOT NULL,
-        wheels INTEGER NOT NULL,
-        interior TEXT NOT NULL,
+        wheels TEXT NOT NULL,
+        interior TEXT NOT NULL
     )
     `
 
@@ -40,7 +40,7 @@ const seedCarsTable = async () => {
             return
         }
 
-        console.log(`✅ ${car.name} added successfully`)
+        console.log(`✅ ${values[0]} added successfully`)
     })
 }
 
