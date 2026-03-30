@@ -10,10 +10,10 @@ import {
 const carsRouter = express.Router()
 
 // define routes to get, create, edit, and delete items
-carsRouter.get('/api/cars', getCars)
-carsRouter.get('/api/cars/:id', getCarById)
-carsRouter.post('/api/cars', createCar)
-carsRouter.put('/api/cars/:id', updateCar)
-carsRouter.delete('/api/cars/:id', deleteCar)
+carsRouter.get('', getCars)
+carsRouter.get('/:id', getCarById)
+carsRouter.post('', createCar)
+carsRouter.put('/:id', updateCar)
+carsRouter.delete('/:id', deleteCar)
 
 export default carsRouter

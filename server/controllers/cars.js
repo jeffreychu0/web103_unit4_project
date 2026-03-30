@@ -44,8 +44,8 @@ export const createCar = async (req, res) => {
 
   try {
     const result = await pool.query(
-      `INSERT INTO CustomItem (name, convertible, color, roof, wheels, interior, price)
-       VALUES ($1, $2, $3, $4, $5, $6, $7)
+      `INSERT INTO CustomItem (name, convertible, color, roof, wheels, interior)
+       VALUES ($1, $2, $3, $4, $5, $6)
        RETURNING *`,
       [name, convertible, color, roof, wheels, interior]
     )

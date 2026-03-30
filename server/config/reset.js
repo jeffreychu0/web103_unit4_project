@@ -29,7 +29,7 @@ const insertQuery = `
     VALUES ($1, $2, $3, $4, $5, $6)
 `
 
-const values = ["MyFirstCar", true, "black", "bodyColor", "normal", "natural"]
+const values = ["MyFirstCar", true, "black", "body color", "normal", "natural"]
 
 const seedCarsTable = async () => {
     await createCarsTable()
