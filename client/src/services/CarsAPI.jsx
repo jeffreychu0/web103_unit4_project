@@ -1,0 +1,1 @@
+// define functions to get, add, update, and delete cars by calling the API. For example, getAllCars, getCar, createCar, etc.
